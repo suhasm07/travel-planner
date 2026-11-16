@@ -1,0 +1,37 @@
+[project]
+name = "travel-planner"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "suhasm07", email = "suhasm651@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "google-genai>=3.3.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+travel-planner = "travel_planner:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.7.0",
+    "pytest>=9.2.0",
+    "ruff>=0.17.5",
+]
