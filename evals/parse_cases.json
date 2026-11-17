@@ -1,0 +1,24 @@
+[
+  {
+    "input": "5 days in Lisbon in March, $1500, I like food and history",
+    "expected": {
+      "destination": "Lisbon",
+      "duration_days": 5,
+      "budget_total": 1500,
+      "currency": "USD"
+    }
+  },
+  {
+    "input": "me and my wife, Paris, 3 nights from 12 June, budget €2,000, vegetarian",
+    "expected": {
+      "destination": "Paris",
+      "travelers": 2,
+      "budget_total": 2000,
+      "currency": "EUR"
+    }
+  },
+  {
+    "input": "cheap weekend somewhere in Bali for 4 friends, 800 each",
+    "expected": { "destination": "Bali", "travelers": 4, "budget_total": 3200 }
+  }
+]
